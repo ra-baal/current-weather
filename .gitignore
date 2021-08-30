@@ -1,0 +1,10 @@
+*.csproj
+*.user
+*.sln
+
+**/bin
+**/obj
+**/Properties
+
+.*
+!.gitignore
