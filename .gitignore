@@ -1,10 +1,12 @@
 *.csproj
 *.user
 *.sln
+*.config
 
 **/bin
 **/obj
 **/Properties
+**/packages
 
 .*
 !.gitignore
