@@ -3,6 +3,8 @@
 *.sln
 *.config
 
+*.txt
+
 **/bin
 **/obj
 **/Properties

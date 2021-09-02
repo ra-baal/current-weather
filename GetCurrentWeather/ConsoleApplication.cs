@@ -72,7 +72,10 @@ namespace GetCurrentWeather
             string apiKey = Environment.GetEnvironmentVariable(_envVar);
 
             if (apiKey == null)
+            {
+                Console.WriteLine("Set the OPENWEATHER_API_KEY variable.");
                 System.Environment.Exit(2);
+            }
 
             return apiKey;
         }
@@ -87,6 +90,7 @@ namespace GetCurrentWeather
             }
             catch (System.Net.Http.HttpRequestException)
             {
+                Console.WriteLine("Not found.");
                 System.Environment.Exit(3);
             }
 
